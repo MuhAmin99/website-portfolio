@@ -693,7 +693,7 @@ footer a::before {
 
 }
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 420px) {
     /* content => title nama */
     .about-me h3 {
         font-size: .8rem;
