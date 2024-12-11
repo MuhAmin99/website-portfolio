@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="themes.css">
+    <link rel="stylesheet" href="responsif.css">
+    <link rel="icon" href="img/logo.ico" type="img/icon-title">
+
+    <!-- font google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <!-- icons boxs -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Amin Rais Langoday - Web Portfolio</title>
+
+</head>
+<body>
+
+    <div class="container" id="container-portfolio">
+
+        <!-- sidebar portfolio -->
+        <div class="sidebar-menu" id="sidebar">
+
+            <button type="button" class="buttonOpen" id="btn-open">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </button>
+            
+            <!-- toggle ganti warna -->
+             <div class="themes" id="tema">
+                <div class="tema"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cloud-sun" viewBox="0 0 16 16">
+                    <path d="M7 8a3.5 3.5 0 0 1 3.5 3.555.5.5 0 0 0 .624.492A1.503 1.503 0 0 1 13 13.5a1.5 1.5 0 0 1-1.5 1.5H3a2 2 0 1 1 .1-3.998.5.5 0 0 0 .51-.375A3.5 3.5 0 0 1 7 8m4.473 3a4.5 4.5 0 0 0-8.72-.99A3 3 0 0 0 3 16h8.5a2.5 2.5 0 0 0 0-5z"/>
+                    <path d="M10.5 1.5a.5.5 0 0 0-1 0v1a.5.5 0 0 0 1 0zm3.743 1.964a.5.5 0 1 0-.707-.707l-.708.707a.5.5 0 0 0 .708.708zm-7.779-.707a.5.5 0 0 0-.707.707l.707.708a.5.5 0 1 0 .708-.708zm1.734 3.374a2 2 0 1 1 3.296 2.198q.3.423.516.898a3 3 0 1 0-4.84-3.225q.529.017 1.028.129m4.484 4.074c.6.215 1.125.59 1.522 1.072a.5.5 0 0 0 .039-.742l-.707-.707a.5.5 0 0 0-.854.377M14.5 6.5a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1z"/>
+                  </svg></div>
+                <div class="tema"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cloud-moon" viewBox="0 0 16 16">
+                    <path d="M7 8a3.5 3.5 0 0 1 3.5 3.555.5.5 0 0 0 .625.492A1.503 1.503 0 0 1 13 13.5a1.5 1.5 0 0 1-1.5 1.5H3a2 2 0 1 1 .1-3.998.5.5 0 0 0 .509-.375A3.5 3.5 0 0 1 7 8m4.473 3a4.5 4.5 0 0 0-8.72-.99A3 3 0 0 0 3 16h8.5a2.5 2.5 0 0 0 0-5z"/>
+                    <path d="M11.286 1.778a.5.5 0 0 0-.565-.755 4.595 4.595 0 0 0-3.18 5.003 5.5 5.5 0 0 1 1.055.209A3.6 3.6 0 0 1 9.83 2.617a4.593 4.593 0 0 0 4.31 5.744 3.58 3.58 0 0 1-2.241.634q.244.477.394 1a4.59 4.59 0 0 0 3.624-2.04.5.5 0 0 0-.565-.755 3.593 3.593 0 0 1-4.065-5.422z"/>
+                  </svg></div>
+             </div>
+            
+
+
+            <!-- sidebar - profile  -->
+            <div class="profile">
+
+               
+
+                <!-- sidebar => photo profile -->
+                <div class="photo">
+                    <a href="#photo-profile"><img src="img/profile-grey.jpg" alt="foto profil Amin" id="foto"></a>
+                </div>
+
+                
+
+                <!-- sidebar => description -->
+                <div class="nutup"></div>
+
+                <h2 id="namaku">@Mhd.Amiiin</h2>
+
+                <div class="typewriter" id="berjalan">
+                I am a <span id="typewriter-text" class="text-style"></span>
+             </div>
+
+                
+                
+               
+            </div>
+
+            <!-- sidebar - Menu Navigasi -->
+            <nav id="nav" class="navbar">
+                <h3>Menu</h3>
+                <ul class="menu-navigasi">
+                    <li class="menu"><a href="#about" data-target="about">Home</a></li>
+
+                    <li class="menu"><a href="#skill" data-target="skill">Skills</a></li>
+
+                    <li class="menu"><a href="#project" data-target="pallete">Project</a></li>
+
+                    <li class="menu"><a href="#contact" data-target="contact">Contact</a></li>
+                </ul>
+                <button type="button" id="btn-github" class="github">Github</button>
+            </nav>
+        </div>
+
+
+
+        <!-- ------------------------------------------------------------->
+
+
+        <!-- untuk content -->
+        <div class="content" id="main-content">
+
+
+            <!-- isi content di dalam sini  -->
+
+            <main class="main-content">
+
+
+
+                 <!-- section => About Me -->
+                <section  class="about-me" id="about">
+
+                    <!-- section title -->
+
+                    
+                    <div class="container-about about1">
+                        
+                        <h4><span class="section-title">Home</span></h4>
+                <!-- heading nama -->
+                <h3>Hi, Saya <span class="nama">Amin Rais Langoday.</span></h3>
+                <!-- deskripsi diri -->
+                <p class="about-desc">Saya seorang <span class="experience"> Frontend Developer</span> yang berdedikasi untuk menciptakan pengalaman pengguna yang luar biasa. Dengan keahlian di <span class="code">HTML,Css,Javascript dan library seperti React</span>. Saya juga telah membangun berbagai situs web responsif dan modern. Saya percaya desain yang baik bukan hanya tentang estetika, tetapi juga tentang fungsi dan kenyamanan pengguna. Saat ini, saya terus mengembangkan keahlian saya di dunia <span class="miring">Web Development</span> dan bersemangat untuk menghadirkan solusi digatal yang inovatif. Selain di bidang Frontend Developer saya juga mengembangkan diri saya di bidang Backend Developer dan juga Desain Graphis (UI/UX). </p>
+
+                <!-- button cv dan follow -->
+                <button type="button" class="btn-resume">Resume</button>
+
+                <!-- sidebar => social media button -->
+
+                <div class="media">
+                    <p>Ikuti saya di </p>
+                    <ul class="sosmed">
+                        <li class="list-sosmed"><a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16">
+                                <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/>
+                              </svg>
+                            
+                        </a></li>
+    
+    
+                        <li class="list-sosmed"><a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                              </svg>
+    
+                        </a></li>
+    
+    
+                        <li class="list-sosmed"><a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                                <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+                              </svg>
+                        </a></li>
+                    </ul>
+                </div>
+
+
+
+            </div>
+
+                <div class=" about-sect2">
+                    <div class="image-home imgboxi"  ></div>
+                    <div class="image-home imgboxii" ></div>
+                    <div class="image-home imgboxiii"></div>
+                </div>
+
+               
+            </section>
+
+
+
+
+                <!-- section skills  -->
+
+                <section id="skill" class="skills">
+                    <h4><span class="section-title">Skill</span></h4>
+                    <div class="my-skill">
+                        <div class="container-skillDesc">
+                        <h2>Skill Saya</h2>
+                        <p class="skill-desc">hi, halo ini adalah beberapa skill yang saya miliki sebagai seorang Frontend Developer dan beberapa skill tambahan lainnya.</p>
+                    </div>
+                        <div class="container-contentSkill">
+                        <div class="skill-content">
+                            <h2>Frontend Developer</h2>
+                            <div class="skill-list html"><span class="skill-text">html</span><span class="persen">90%</span></div>
+
+
+                            <div class="skill-list css"><span class="skill-text">Css</span><span class="persen">90%</span></div>
+
+                            <div class="skill-list js"><span class="skill-text">Javascript</span><span class="persen">75%</span></div>
+                        </div>
+
+                        <div class="skill-content">
+                            <h2>Backend Developer</h2>
+                            <div class="skill-list php"><span class="skill-text">Php</span><span class="persen">40%</span></div>
+
+
+                            <div class="skill-list java"><span class="skill-text">Java</span><span class="persen">30%</span></div>
+
+                            <div class="skill-list phyton"><span class="skill-text">Phyton</span><span class="persen">10%</span></div>
+                        </div>
+
+                        <div class="skill-content">
+                            <h2>Tools Design/Editing etc.</h2>
+
+                            <div class="skill-list photoshop"><span class="skill-text">Photoshop</span><span class="persen">95%</span></div>
+
+
+                            <div class="skill-list illustrator"><span class="skill-text">Illustrator</span><span class="persen">85%</span></div>
+
+                            <div class="skill-list canva"><span class="skill-text">Canva</span><span class="persen">90%</span></div>
+                            
+                            <div class="skill-list premiere"><span class="skill-text">Premiere Pro</span><span class="persen">80%</span></div>
+
+                            <div class="skill-list after"><span class="skill-text">After Effect</span><span class="persen">80%</span></div>
+
+                            <div class="skill-list capcut"><span class="skill-text">Capcut</span><span class="persen">90%</span></div>
+                        </div></div>
+                    </div>
+                </section>
+
+
+                <!-- section Project  -->
+                 <section id="project" class="project">                    
+                    <h4><span class="section-title">Project</span></h4>
+                
+                    <h5> ini adalah beberapa Project yang telah saya kerjakan</h5>
+                <div class="content-project" id="content-project">
+
+                    <!-- content project 1 -->
+                    <div class="content-project-list">
+                        <div class="content-project-img"></div>
+                        <h3>Web Invitation Wedding</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda iste eos, quisquam amet dignissimos eveniet totam laborum laudantium. Molestias, voluptate.</p>
+
+                        <button type="button" class="btn-project" >kunjungi↗</button>
+                    </div>
+
+                    <!-- content project 2 -->
+                    <div class="content-project-list">
+                        <div class="content-project-img"></div>
+                        <h3>MarketPlace</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda iste eos, quisquam amet dignissimos eveniet totam laborum laudantium. Molestias, voluptate.</p>
+
+                        <button type="button" class="btn-project" >kunjungi↗</button>
+                    </div>
+                    
+                    <!-- content project 3 -->
+                    <div class="content-project-list">
+                        <div class="content-project-img"></div>
+                        <h3>Web Business</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda iste eos, quisquam amet dignissimos eveniet totam laborum laudantium. Molestias, voluptate.</p>
+
+                        <button type="button" class="btn-project" >kunjungi↗</button>
+                    </div>
+                    
+                    <!-- content project 4 -->
+                    <div class="content-project-list">
+                        <div class="content-project-img"></div>
+                        <h3>Web Sekolah</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda iste eos, quisquam amet dignissimos eveniet totam laborum laudantium. Molestias, voluptate.</p>
+
+                        <button type="button" class="btn-project" >kunjungi↗</button>
+                    </div>
+
+                </div>
+                
+                
+                    
+                     
+                 </section>
+
+                            
+            </main>
+            
+            <!-- ini penutup pembungkus -->
+
+
+          <section class="container-contact" id="contact">
+            <div class="form">
+            <h1>Contact Me</h1>
+            <form action="send_email.php" id="contact-form" method="post">
+                <input type="text" name="name" placeholder="Masukkan Nama" required>
+                <input type="email" name="email" placeholder="Masukkan email" required>
+                <textarea name="message" placeholder="Masukkan Pesan" id="isikan Pesan" rows="5" required></textarea>
+                <button type="submit" class="button-contact">Kirim Pesan</button>
+            </form>
+            <div id="result"></div>
+        </div>
+          </section>  
+
+
+
+
+
+            
+            <!-- footer -->
+            <footer class="footer">
+
+               <div class="end-web">
+                    <!-- footer => deskrips -->
+                   <h3>Website ini dibuat oleh <span class="author">@Mhd.Amiiin</span></h3>
+                   <!-- footer => job -->
+                   <p class="miring">seorang Frontend Developer</p>
+                   
+               </div>
+               <div class="copyright">
+                <!-- footer => copyright -->
+                <p class="copy">Copyright 2024 © Made with 💖 by @mhd.amiiin</p>
+               </div>
+            </footer>
+        </div>
+    </div>
+
+
+<script src="type.js"></script>
+    
+</body>
+</html>

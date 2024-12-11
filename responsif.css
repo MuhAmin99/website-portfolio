@@ -1,0 +1,832 @@
+:root{
+	--buttonColor : #5e68e6;
+	--primaryTextColor : #fff;
+	--secondaryTextColor : #f2b354;
+	--primaryBgColor : #212121;
+	--secondaryBgColor : #313131;
+}
+
+
+
+
+@media screen and (max-width: 1024px) {
+    /* styling sidebar => profile */
+    .photo img {
+        width: 100px;
+        border-radius: 50%;
+        border: 4px solid #313131;
+        margin-bottom: 6px;
+    }
+    .profile h2 {
+        font-size: 1.2rem;
+    }
+    .typewriter {
+        font-size: .7rem;
+    }
+
+    /* styling sidebar => navbar */
+    .menu-navigasi a {
+        font-size: .9rem;
+    }
+
+    /* styling content => nama */
+    .about-me .nama {
+        font-size: 1.5rem;
+    }
+
+    /* ================================================================== */
+    .about-desc {
+        width: 100%;
+        font-size: .75rem;
+    }
+
+    .about-sect2 .image-home {
+        width: 180px;
+        height: 230px;
+    }
+    .about-sect2 .image-home:hover {
+        width: 200px;
+        height: 250px;
+    }
+    .content.slide .image-home {
+        width: 220px;
+        height: 270px;
+    }
+
+    .content.slide .image-home:hover {
+        width: 240px;
+        height: 290px;
+    }
+
+    /* styling content => project */
+    .content-project {
+        width: 100%;
+        margin: 10px auto 0;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        padding: 10px;
+        gap: 10px;
+        transition: all 1s ease-in;
+    }
+    .content-project-list {
+        width: 100%;
+        height: 310px;
+        background-color: #d3d3d3;
+        background-image:url(img/img-pattern/spikes.webp);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        cursor: pointer;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        transition: box-shadow .3s ease-in;
+    }
+    
+}
+
+@media screen and (max-width: 980px) {
+    
+    /* style container */
+    .container {
+        grid-template-columns: 30% 70%;
+    }
+
+
+
+    .sidebar-menu {
+        width: 30%;
+    }
+
+    /* styling content */
+    .about-sect2 .image-home {
+        width: 170px;
+        height: 220px;
+    }
+    .about-sect2 .image-home:hover {
+        width: 190px;
+        height: 240px;
+    }
+
+.content.slide .image-home {
+    width: 170px;
+    height: 220px;
+}
+.content.slide .image-home:hover {
+    width: 190px;
+    height: 240px;
+}
+    .about-sect2 .imgboxi {
+        top: 210px;
+    }
+    .about-sect2 .imgboxii {
+        top: 230px;
+    }
+    .about-sect2 .imgboxiii  {
+        top: 250px; 
+    }
+
+    /* content */
+    /* styling content */
+    .about-desc {
+        width: 100%;
+        font-size: 0.6rem;
+    }
+    .about-me .nama {
+        font-size: 1.6rem;
+    }
+
+    
+}
+
+
+@media  screen and (max-width: 768px) {
+    html {
+        scroll-padding-top: 60px;
+    }
+    
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sidebar-menu {
+        width: 100%;
+        height: 60px;
+        background-color: var(--primaryBgColor);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2px 4rem;
+        box-shadow: none;
+        position: fixed;
+    }
+    .sidebar-menu.slide{
+        transform: none;
+        visibility: visible;
+        /* opacity: 0; */
+    }
+
+    /* style button open */
+    .buttonOpen {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 4rem;
+    }
+    .buttonOpen.slide {
+        right: 4rem;
+    }
+
+    .bar:nth-child(1),
+    .bar:nth-child(2),
+    .bar:nth-child(3){
+	transform: none;
+	opacity: 1;
+}
+    .bar.slide:nth-child(1){
+        transform: rotate(-45deg) translateY(7px) translateX(-1px);
+    }
+    .bar.slide:nth-child(2){
+        opacity: 0;
+    }
+    .bar.slide:nth-child(3){
+        transform: rotate(45deg) translateY(-7px) translateX(-1px);
+    }
+
+    /* style toggle ganti warna */
+    .themes {
+	position: absolute;
+	top: 50%;
+	left: 4rem;
+    transform: translateY(-50%);
+    }
+
+    /* styling sidebar => profile */
+    .profile {
+        width: 500px;
+        margin-top:160px;
+        padding: 5px;
+        position: static;
+        background: none;
+    }
+    .profile.change {
+        background:none;
+    }
+
+    /*  style sidebar => profile => photo */
+    .photo img {
+    transform: translateY(-15px);
+    border: 8px solid #212121;
+    }   
+
+    /* style ganti tema sidebar => profile => photo  */
+    .photo.change img {
+        border: 8px solid #fff;
+    }
+
+    /* header 2 nutup */
+    .nutup {
+        width: 100%;
+        height: 60px;
+        background-color: #212121;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.1);
+    }
+    .sidebar-menu.change .nutup {
+        background-color: #fff;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.03);
+    }
+
+    /* style sidebar => heading nama */
+    .profile h2 {
+	color: var(--primaryTextColor);
+	font-size: 1.2rem;
+    position: relative;
+    top: -30px;
+    z-index: -2;
+}
+    .typewriter {
+	text-align: center;
+	font-size: .8rem;
+	color: var(--primaryTextColor);
+    position: relative;
+    z-index: -2;
+    top: -30px;
+}
+/* title media sosial  */
+
+.list-sosmed svg {
+	width: 18px;
+	height: 18px;
+}
+
+
+
+    /* styling sidebar => navbar */
+    .navbar {
+        width: 40%;
+        right: -70%;
+        position: absolute;
+        top: 65px;
+        backdrop-filter: blur(10px);
+        gap: 2rem;
+        padding: 10px 0;
+        background-color: #ffffff09;
+        border-radius: 20px 0 20px 20px;
+        box-shadow: -5px 10px 10px rgba(0, 0, 0, 0.1);
+
+
+    }
+    .navbar.slide{
+        right: 4rem;
+    }
+    /* styling sidebar => navbar menu title */
+    .navbar h3,
+    .navbar a {
+        color: #fff;
+    }
+    .navbar h3::before,
+    .navbar h3::after{
+        background-color: #fff;
+    }
+    .navbar.change h3,
+    .navbar.change .menu-navigasi a {
+        color: var(--primaryBgColor);
+    }
+    .navbar.change h3::before,
+    .navbar.change h3::after {
+        background-color: #212121;
+    }
+    .menu-navigasi {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+
+    /* styling content */
+    .about-me h3 {
+        font-size: 1rem;
+    }
+    .about-me .nama {
+        font-size: 1.6rem;
+    }
+
+
+    /* content => about */
+    .content {
+        top: 170px;
+    }
+    .about-me {
+        height: auto;
+    }
+    .about-sect2 {
+        flex-basis: 30%;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        justify-content: center;
+    }
+    
+
+    .about-me h3 {
+        color: var(--primaryTextColor);
+        font-size: 1.2rem;
+        font-weight: 300;
+        margin-top: 50px;
+    }
+    .about-me .nama {
+        font-size: 1.5rem;
+    }
+
+
+    .about-sect2 .imgboxi {
+        top: 50px;
+    }
+    .about-sect2 .imgboxii {
+        top: 70px;
+    }
+    .about-sect2 .imgboxiii  {
+        top: 90px; 
+    }
+
+    /* content => skills */
+
+    .my-skill {
+        width: 100%;
+        gap: 20px;
+    }
+    
+    .sec-skill {
+        /* flex-shrink: 1; */
+        /* flex-basis: 200px; */
+        width: 160px;
+        /* flex-grow: 1; */
+        height: 220px;
+        border-radius: 5px;
+        padding: 10px;
+        cursor: pointer;
+        background-color: #434343;
+        box-shadow: 2px 10px 10px rgba(0, 0, 0, 0.1);
+        transition: .4s ease-in;
+    }
+
+    /* ============================================================== */
+    /* styling content => project  */
+    .content-project {
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+    }
+    .content.slide .content-project {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .content-project-list {
+        height: 400px;
+    }
+
+}
+
+@media screen and (max-width: 540px) {
+ 
+   
+    /* style sidebar => heading nama */
+    .profile h2 {
+        font-size: 1rem;
+    }
+        .typewriter {
+        font-size: .6rem;
+    }
+
+    /* content => about  */
+    .about-me {
+        height: 100vh;
+    }
+    .about1 {
+        flex-basis: 100%;
+        padding: 20px;
+    }
+    .about-me h3 {
+        font-size: 1.3rem;
+    }
+    .about-me .nama {
+        font-size: 1.6rem;
+    }
+    /* styling about-sect2 */
+    .about-sect2 {
+    display: none;
+    }
+    /* desckripsi */
+    .about-desc {
+        width: 100%;
+        font-size: 0.8rem;
+    }
+
+    /* content => footer */
+    footer {
+        padding: 10px;
+        gap: 1px
+    }
+    .end-web {
+        width: 320px;
+    }
+    footer h3 {
+        font-size: 1rem;
+    }
+    footer .end-web p {
+        font-size: .8rem;
+    }
+    .end-web .copy {
+        font-size: .6rem;
+    }
+
+    /* style footer => contact */
+.contact {
+	width: 100px;
+	height: 150px;
+}
+/* style footer => contact => title */
+.contact h1 {
+	font-size: 1rem;
+}
+/* style footer => contact => menuNav */
+footer a {
+    font-size: 13px;
+	left: 15px;
+}
+footer a::before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: -15px;
+	width: 10px;
+	height: 1px;
+	background-color: #fff;
+}
+
+
+/* footer => content */
+.content-end {
+	width: 100px;
+	height: 150px;
+}
+.content-end h1 {
+	color: var(--primaryTextColor);
+	font-size: 1rem;
+}
+
+    
+}
+
+
+/* ================================================================================== */
+
+@media  screen and (max-width : 467px) {
+
+    /* styling navbar */
+
+    .navbar {
+        width: 60%;
+        right: -70%;
+        position: absolute;
+        top: 65px;
+        backdrop-filter: blur(10px);
+        gap: 2rem;
+        padding: 10px 0;
+        background-color: #ffffff09;
+        border-radius: 20px 0 20px 20px;
+        box-shadow: -5px 10px 10px rgba(0, 0, 0, 0.1);
+
+
+    }
+    .navbar.slide{
+        right: 1.5rem;
+    }
+    
+    /* styling button tema */
+    .themes {
+        position: absolute;
+        top: 50%;
+        left: 1rem;
+        transform: translateY(-50%);
+        }
+    /* styling navbar => button */
+    .buttonOpen {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 1rem;
+    }
+    /* agar ketika button di klik posisi button tetap berada di kanan 2 rem */
+    .buttonOpen.slide {
+        right: 1rem;
+    }
+
+    /* navbar => photo */
+    .photo img {
+        width: 70px;
+        border: 5px solid #212121;
+    }
+    /* ganti tema border  */
+    .photo.change img {        
+        border: 5px solid #759cb5;
+    }
+
+    /* styling content => home */
+
+    /* styling content => section-title */
+    .section-title {
+        font-size: .7rem;
+    }
+    .section-title::before {
+        content: '';
+        width: 10px;
+        height: 1px;
+        background-color: var(--secondaryTextColor);
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: -14px;
+    }
+
+    /* content => title nama */
+    .about-me h3 {
+        font-size: 1.2rem;
+        margin-top: 70px;
+        text-align: center;
+    }
+    .about-me .nama {
+        font-size: 1.5rem;
+    }
+
+    /* content => deskripsi diri */
+    .about-desc {
+	width: 100%;
+	font-size: .65rem;
+    }
+
+    /* content => button resume */
+    .btn-resume {
+	cursor: pointer;
+	margin-top: 120px;
+    }   
+    .about-me.show .btn-resume {
+	opacity: 1;
+    left: 50%;
+	transform: translateX(-50%);
+    }
+    /* content => icon sosmed */
+    .media {
+        display: flex;
+        transform: translateY(65px) translateX(-50%);
+        position: absolute;
+        left: 50%;
+    }
+    .media p {
+        font-size: 10px;
+    }
+    .sosmed {
+        position: static;
+        transform: none;
+        flex-direction: row;
+    }
+    
+    /* styling skills */
+    .skills {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        position: relative;
+        margin-bottom: 20px;
+    }
+    .my-skill {
+	width: 100%;
+	display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 12px;
+	padding: 20px;
+	transform: none;
+    }
+    .container-skillDesc {
+	width: 100%;
+    text-align: center;
+    }
+    .container-skillDesc h2 {
+    font-size: 18px;
+    }
+    .container-skillDesc p {
+	width: 100%;
+    font-size: 12px;
+    }
+    .container-contentSkill {
+	width: 100%;
+    margin-top: 50px;
+	gap: 50px;
+    }
+    .skill-content h2 {
+        font-size: 18px;
+    }
+    .skill-text {
+        font-size: 12px;
+    }
+    .persen {
+        font-size: 10px;
+    }
+
+    /* content => project */
+    .project h5 {
+        width: 80%;
+        font-size: 18px;
+        margin: 30px auto 10px;
+    }
+    .content-project {
+        margin: 10px auto 30px;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 50px;
+    }
+     .content.slide .content-project{
+        grid-template-columns: repeat(1, 1fr);
+    } 
+    .content-project-list {
+        width: 80%;
+        height: 350px;
+    }
+
+    /*  content => contact */
+    .form {
+        width: 350px;
+        margin: 10px auto 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        cursor: pointer;
+        padding: 20px;
+        background-color: var(--primaryTextColor);
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        transition: all .4s ease;
+    }
+    
+    input,
+    textarea {
+        width: 300px;
+    }
+    textarea {
+        height: 150px;
+    }
+
+    /* footer  */
+    .copyright {
+        margin-top: 30px;
+        font-size: .8rem;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+
+
+    /* style content => about me */
+.about-me {
+    height: auto;
+    margin-bottom: 25px;
+}
+    /* content => title nama */
+    .about-me h3 {
+        font-size: .8rem;
+        margin-top: 70px;
+        text-align: center;
+    }
+    .about-me .nama {
+        font-size: 1.2rem;
+    }
+
+    /* content => deskripsi diri */
+    .about-desc {
+	width: 100%;
+	font-size: .55rem;
+    }
+
+    /* content => button resume */
+    .btn-resume {
+        width: 75px;
+        height: 25px;
+        margin-top: 70px;
+        left: 50%;
+        font-size: 11px;
+    }
+
+    .about-me.show .btn-resume {
+        transform: translateX(-50%);
+    }
+
+    /* content => icon sosmed */
+    .media {
+        display: flex;
+        transform: translateY(0) translateX(-50%);
+        position: relative;
+        left: 50%;
+        margin-top: 50px;
+    }
+    .media p {
+        font-size: 10px;
+    }
+    .sosmed {
+        position: static;
+        transform: none;
+        flex-direction: row;
+    }
+    .sosmed svg {
+        width: 12px;
+        height: 12px;
+    }
+
+    /* content => project */
+    .project h5 {
+        width: 80%;
+        font-size: 15px;
+    }
+    .content-project {
+        margin: 10px auto 30px;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 50px;
+    }
+     .content.slide .content-project{
+        grid-template-columns: repeat(1, 1fr);
+    } 
+    .content-project-list {
+        width: 90%;
+        height: 320px;
+    }
+
+    /*  content => contact */
+    .container-contact {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .form {
+        width: 280px;
+        gap: 10px;
+        cursor: pointer;
+        padding: 15px;
+    }
+    .form h1 {
+        font-size: 20px;
+    }
+    
+    input,
+    textarea {
+        width: 220px;
+        height: 40px;
+        padding: 5px ;
+        border-radius: 5px;
+        font-size: 10px;
+    }
+    textarea {
+        height: 100px;
+    }
+    
+    
+    .button-contact {
+        border: none;
+        width: 60%;
+        height: 30px;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+
+    /* styling footer */
+    .end-web {
+        width: 100%;
+        text-align: center;
+    }
+    footer h3 {
+        font-size: .85rem;
+    }
+    footer .end-web p {
+        font-size: .7rem;
+        margin-bottom: 20px;
+    }
+    .copy {
+        font-size: .7rem;
+    }
+
+
+
+
+    
+    
+}

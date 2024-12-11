@@ -1,0 +1,293 @@
+:root {
+    --primaryColor : #5e68e6;
+    --secondaryColor : #f3c331;
+    --textColor : #f9f9f8;
+    --textColor2 : #b73b52;
+    --bgcolor : #f9f9f8;
+    --BgColor-2 : #759cb5;
+    --color : #212121;
+
+}
+
+
+/* ==================================================== */
+
+/* style toggle ganti warna */
+.themes {
+	position: absolute;
+	border-radius: 50%;
+	top: 8px;;
+	left: 15px;
+	display: flex;
+	justify-content: center;
+    z-index: 999;
+	align-items: center;
+}
+
+.themes .tema svg{
+    cursor: pointer;
+    width: 20px;
+	height: 20px;
+    position: relative;
+    fill: var(--textColor2);
+}   
+
+.themes .tema::after {
+    content: 'light Mode';
+    position: absolute;
+    top: 0;
+    right:-50px;
+    /* background-color: var(--BgColor-2); */
+    padding: 2px 5px;
+    border-radius: 20px;
+    font-size: 8px;
+    white-space: nowrap;
+    opacity: 0; /* Awalnya tidak terlihat */
+    pointer-events: none; /* Agar tidak mengganggu hover */
+    transition: opacity 0.3s ease;
+    color: var(--bgcolor);
+    font-weight: bold;
+}
+ .tema.change::after {
+    content: 'Dark Mode';
+    /* background-color: #333; */
+    transition: opacity 0.3s ease;
+    color: var(--color);
+}
+.themes .tema:hover::after {
+    opacity: 1;
+}
+.themes .tema:nth-child(1) svg{
+    fill: var(--secondaryColor);
+}
+.themes .tema:nth-child(2) {
+	display: none;
+}
+.tema.change:nth-child(1) {
+	display: none;
+}
+.tema.change:nth-child(2){
+	display: block;
+    
+}
+
+/* ===================================================================== */
+/* tema body */
+body {
+    transition: all .4s ease;
+}
+body.change {
+    background-color: var(--bgcolor);
+    transition: all .4s ease;
+}
+
+/* tema button */
+.bar.change {
+    background-color: var(--textColor2);
+    transition: all .4s ease-in;
+}
+.sidebar-menu.change {
+    background-color: var(--BgColor-2);
+}
+.sidebar-menu.change .nutup {
+    background-color: var(--BgColor-2);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.048);
+}
+
+/* tema sidebar profile */
+.profile {
+    transition: all .3s ease-in;
+}
+.profile.change {
+    background-color: var(--bgcolor);
+    transition: all .4s ease-in;
+}
+/* tema sidebar profile => nama */
+
+.profile.change h2 {
+    /* transition: all .3s ease-out; */
+    color: #212121;
+}
+/* tema sidebar => profile => photo */
+.photo img {
+    transition: all .2s ease-in ;
+}
+.photo.change img {
+    border: 4px solid #759cb5;
+    transition: all .2s ease-out;
+}
+/* tema sidebar => profile => typewriter */
+.typewriter.change {
+    color: #212121;
+}
+.typewriter.change .text-style {
+    color: var(--textColor2);
+}
+
+
+/* ==================================================== */
+
+/* tema sidebar => navbar */
+.navbar {
+    transition: all .3s ease-in;
+}
+.navbar.change {
+    background-color: #759cb510;
+    transition: all .3s ease-in;
+}
+
+/* tema sidebar => navbar => title */
+.navbar.change h3 {
+    color: var(--textColor);
+}
+.navbar.change h3::before{
+    background-color: var(--bgcolor);
+}
+.navbar.change h3::after{
+    background-color: var(--bgcolor);
+}
+
+/* tema sidebar => navbar => menu navigasi */
+.navbar li a {
+    transition: all .3s ease-in;
+}
+.navbar.change li a {
+    color: var(--bgcolor);
+    transition: all .3s ease-out;
+}
+.navbar.change li a::after {
+    background-color: var(--textColor);
+}
+
+/* tema sidebar => navbar => button */
+.navbar.change .github {
+    background-color: var(--textColor2);
+    color: #fff;
+}
+/* tema sidebar => profile => media sosial */
+.media.change p {
+    color: var(--color);
+}
+.media.change svg {
+    fill: var(--textColor2);
+    transition: all .3s ease-in;
+}
+.media.change svg:hover {
+    fill: #605d67;
+}
+
+/* =============================================================== */
+
+
+
+/* tema content => title*/
+body.change .section-title{
+    color: var(--textColor2);
+}
+.about-me.change {
+    background-image: url(img/img-pattern/papyrus.webp);
+    background-repeat: repeat;
+    background-size: auto;
+    background-position: 0%;
+}
+.about-me.change::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	backdrop-filter: blur(0);
+	z-index: -1;
+	background-color: #ffffff27;
+}
+.about-me.change .section-title::before{
+    background-color: var(--textColor2);
+}
+
+/* tema content => nama */
+.about-me.change h3 {
+    color: var(--color) ;
+}
+.about-me.change .nama {
+    color: var(--BgColor-2);
+}
+
+/* tema content => deskripsi diri */
+.about-me.change .about-desc {
+    color: var(--color);
+}
+
+/* tema content => button cv dan github */
+.about-me.change .btn-resume {
+    background-color: var(--textColor2);
+}
+
+/* ======================================================================== */
+/* styling ganti tema content => skill */
+.skills.change h2 {
+    color: var(--color);
+}
+.skills.change p,
+.skills.change .skill-text,
+.skills.change .persen {
+    color: var(--color);
+}
+
+.skills.change .skill-list {
+    background-color: #c1c1c16a;
+}
+.skills.change .skill-list::after {
+	background-color: var(--BgColor-2);
+}
+
+
+/* ganti tema project */
+
+.project.change h5 {
+	color: var(--color);
+}
+
+.project.change .content-project-list:hover {
+	outline: 1.5px solid #b73b52;
+}
+
+.project.change .btn-project{
+	background-color: var(--textColor2);
+	color: var(--bgcolor);
+}
+
+
+/* ========================================================================= */
+
+/* ganti tema contact */
+#contact.change .form h1 {
+	color: var(--textColor2);
+}
+
+#contact.change input:focus,
+input:valid,
+textarea:focus,
+textarea:valid
+{
+	border: 2px solid #b73b52;
+}
+
+#contact.change .button-contact {
+	background-color: var(--textColor2);
+	color: var(--bgcolor);
+}
+
+/* ========================================================================= */
+
+/* tema footer */
+.footer.change {
+    background-color: var(--textColor2);
+}
+
+.footer.change h1, 
+.footer.change h3, 
+.footer.change p,
+.footer.change a {
+    color: var(--textColor);
+}
