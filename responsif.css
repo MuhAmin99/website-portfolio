@@ -693,6 +693,19 @@ footer a::before {
 
 }
 
+@media screen and (max-width: 376px) {
+    /* content => title nama */
+    .about-me h3 {
+        font-size: .8rem;
+        margin-top: 70px;
+        text-align: center;
+    }
+    .about-me .nama {
+        font-size: 1.2rem;
+    }
+    
+}
+
 @media screen and (max-width: 320px) {
 
 
